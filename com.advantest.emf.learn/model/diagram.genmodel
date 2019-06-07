@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/com.advantest.emf.learn/src" modelPluginID="com.advantest.emf.learn"
+    modelName="Diagram" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="8.0" copyrightFields="false"
+    operationReflection="true" importOrganizing="true">
+  <foreignModel>diagram.ecore</foreignModel>
+  <genPackages prefix="Diagram" disposableProviderFactory="true" ecorePackage="diagram.ecore#/">
+    <genClasses ecoreClass="diagram.ecore#//PurchaseOrder">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute diagram.ecore#//PurchaseOrder/shipTo"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute diagram.ecore#//PurchaseOrder/billTo"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference diagram.ecore#//PurchaseOrder/items"/>
+    </genClasses>
+    <genClasses ecoreClass="diagram.ecore#//Item">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute diagram.ecore#//Item/productName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute diagram.ecore#//Item/quatity"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute diagram.ecore#//Item/price"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>
