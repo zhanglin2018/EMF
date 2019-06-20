@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated Diagram -->
+      <package
+            uri="http://com.advantest.emf.learnEMF/diagram"
+            class="diagram.DiagramPackage"
+            genModel="model/Diagram.genmodel"/>
+   </extension>
+
+</plugin>
