@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="testProgram" nsURI="http://com.advantest.ate.fpl/testProgram"
+    nsPrefix="testProgram">
+  <eClassifiers xsi:type="ecore:EClass" name="Suite">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="TestSuite" eSuperTypes="#//Suite"/>
+  <eClassifiers xsi:type="ecore:EClass" name="TestFlow" eSuperTypes="#//Suite">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="suites" upperBound="-1"
+        eType="#//Suite" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="TestProgram">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="flows" upperBound="-1"
+        eType="#//TestFlow" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Root">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="programs" upperBound="-1"
+        eType="#//TestProgram" containment="true"/>
+  </eClassifiers>
+</ecore:EPackage>

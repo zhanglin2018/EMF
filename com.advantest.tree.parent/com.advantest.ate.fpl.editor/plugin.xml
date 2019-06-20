@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated testProgram -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="testProgram.presentation.TestProgramModelWizardID"
+            name="%_UI_TestProgramModelWizard_label"
+            class="testProgram.presentation.TestProgramModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/TestProgramModelFile.gif">
+         <description>%_UI_TestProgramModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated testProgram -->
+      <editor
+            id="testProgram.presentation.TestProgramEditorID"
+            name="%_UI_TestProgramEditor_label"
+            icon="icons/full/obj16/TestProgramModelFile.gif"
+            extensions="testprogram"
+            class="testProgram.presentation.TestProgramEditor"
+            contributorClass="testProgram.presentation.TestProgramActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>
