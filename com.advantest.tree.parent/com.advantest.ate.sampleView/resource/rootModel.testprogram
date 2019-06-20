@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testProgram:Root xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:testProgram="http://com.advantest.ate.fpl/testProgram">
+  <programs name="DC_Test">
+    <flows name="Main">
+      <suites xsi:type="testProgram:TestFlow" name="SubFlow1">
+        <suites name="subSuite1"/>
+      </suites>
+    </flows>
+    <flows name="Main1">
+      <suites name="subSuite1"/>
+      <suites name="subSuite2"/>
+      <suites xsi:type="testProgram:TestFlow" name="Main2">
+        <suites xsi:type="testProgram:TestSuite" name="subSuite3"/>
+        <suites xsi:type="testProgram:TestSuite" name="subSuite4"/>
+      </suites>
+    </flows>
+  </programs>
+  <programs name="AC_Test">
+    <flows name="Main">
+      <suites xsi:type="testProgram:TestFlow" name="SubMain1">
+        <suites xsi:type="testProgram:TestSuite" name="subSuite1"/>
+      </suites>
+    </flows>
+    <flows name="SubMain2"/>
+    <flows name="SubMain3">
+      <suites xsi:type="testProgram:TestSuite" name="subSuite2"/>
+    </flows>
+  </programs>
+  <programs name="Normal_Test">
+    <flows name="Main">
+      <suites xsi:type="testProgram:TestFlow" name="SubMain1">
+        <suites xsi:type="testProgram:TestSuite" name="subSuite1"/>
+      </suites>
+    </flows>
+    <flows name="SubMain2"/>
+    <flows name="SubMain3">
+      <suites xsi:type="testProgram:TestSuite" name="subSuite2"/>
+    </flows>
+  </programs>
+  <programs name="Scan_Test">
+    <flows name="Main">
+      <suites xsi:type="testProgram:TestFlow" name="SubMain1">
+        <suites xsi:type="testProgram:TestSuite" name="subSuite1"/>
+      </suites>
+    </flows>
+    <flows name="SubMain2"/>
+    <flows name="SubMain3">
+      <suites xsi:type="testProgram:TestSuite" name="subSuite2"/>
+    </flows>
+  </programs>
+</testProgram:Root>
